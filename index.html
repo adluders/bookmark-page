@@ -1,125 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bookmark landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="images/logo-bookmark.svg" alt="">
-      </div>
+    <title>Frontend Mentor | Bookmark landing page</title>
 
-      <ul class="nav-items">
-        <li>
-          <a href="#" class="nav-link">Features</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Login</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <main>
-    <section class="showcase">
-      <div class="message">
-        <h1 class="message-heading">A Simple Bookmark Manager</h1>
-        <p class="lead-text">A clean and simple interface to organize your favourite websites. Open a new 
-          browser tab and see your sites load instantly. Try it for free.</p>
-        <a href="#" class="cta-primary">Get it on Chrome</a>
-        <a href="#" class="cta-light">Get it on Firefox</a>
-      </div>
-    </section>
+    <link rel="stylesheet" href="css/mobile.css" />
 
-    <section class="features">
-      <div class="section-header">
-        <h2 class="section-title">Features</h2>
-        <p class="lead-text">Our aim is to make it quick and easy for you to access your favourite websites. 
-          Your bookmarks sync between your devices so you can access them on the go.</p>          
-      </div>
+    <link rel="stylesheet" href="css/desktop.css" />
 
-      <div class="features-tabs">
-        <div class="features-tab">
-          <p class="features-tab__title"> Simple Bookmarking</p>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="main-nav">
+        <div class="logo">
+          <img src="images/logo-bookmark.svg" alt="" />
+        </div>
+
+        <ul class="nav-items">
+          <li>
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Login</a>
+          </li>
+        </ul>
+
+        <div class="toggler">
+          <img src="images/icon-hamburger.svg" alt="Toggler" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase" class="container">
+        <div class="showcase">
+          <img src="images/illustration-hero.svg" alt="Showcase Image" />
+        </div>
+        <div class="message">
+          <h1 class="message-heading">A Simple Bookmark Manager</h1>
+          <p class="lead-text">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+        </div>
+        <div class="showcase-cta">
+          <a href="#" class="primary-cta">Get it on Chrome</a>
+          <a href="#" class="light-cta">Get it on Firefox</a>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="section-header">
+          <h2 class="section-title">Features</h2>
+          <p class="lead-text">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+
+        <div class="features-tabs">
+          <div class="features-tab">
+            <p class="features-tab__title active-tab">Simple Bookmarking</p>
+          </div>
+
+          <div class="features-tab">
+            <p class="features-tab__title">Speedy Searching</p>
+          </div>
+
+          <div class="features-tab">
+            <p class="features-tab__title">Easy Sharing</p>
+          </div>
+        </div>
+
+        <div class="features-tabs__content">
           <div class="features-tab__content">
-            <img src="images/illustration-features-tab-1.svg" alt="">
+            <div class="tab-content__img">
+              <img src="images/illustration-features-tab-1.svg" alt="" />
+            </div>
             <div class="tab__content-info">
               <h3 class="tab__content-tile">
                 Bookmark in one click
               </h3>
               <p class="lead-text">
-
-                Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                gives you complete control over how you manage your favourite sites.
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
               </p>
-              <a href="#" class="primary-cta">  More Info</a>
+              <a href="#" class="primary-cta"> More Info</a>
             </div>
           </div>
-        </div>
-        <div class="features-tab">
-          
-          <p class="features-tab__title">Speedy Searching</p>
+
           <div class="features-tab__content">
-            <img src="images/illustration-features-tab-2.svg" alt="">
+            <div class="tab-content__img">
+              <img src="images/illustration-features-tab-2.svg" alt="" />
+            </div>
             <div class="tab__content-info">
               <h3 class="tab__content-tile">
                 Intelligent search
               </h3>
               <p class="lead-text">
-                Our powerful search feature will help you find saved sites in no time at all. 
-                No need to trawl through all of your bookmarks.
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
               </p>
               <a href="#" class="primary-cta">More Info</a>
+            </div>
           </div>
-        </div>
-        <div class="features-tab">
 
-          <p class="features-tab__title">Easy Sharing</p>
           <div class="features-tab__content">
-            <img src="images/illustration-features-tab-3.svg" alt="">
+            <div class="tab-content__img">
+              <img src="images/illustration-features-tab-3.svg" alt="" />
+            </div>
             <div class="tab__content-info">
               <h3 class="tab__content-tile">
                 Share your bookmarks
               </h3>
               <p class="lead-text">
-                Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
               </p>
               <a href="#" class="primary-cta">More Info</a>
-          </div> 
+            </div>
+          </div>
         </div>
-      </div>
-        
       </section>
 
-      <section class="download">
+      <section id="download">
         <div class="section-header">
           <h2 class="section-title">Download the extension</h2>
-          <p class="lead-text">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-            got a favourite you’d like us to prioritize.</p>
+          <p class="lead-text">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
         </div>
 
         <div class="cards">
           <div class="card">
-            <img src="images/logo-chrome.svg" alt="">
+            <img src="images/logo-chrome.svg" alt="" />
             <h4 class="card-title">Add to Chrome</h4>
             <p class="card-text">Minimum version 62</p>
             <span class="card-bg"></span>
@@ -127,7 +176,7 @@
           </div>
 
           <div class="card">
-            <img src="images/logo-firefox.svg.svg" alt="">
+            <img src="images/logo-firefox.svg" alt="" />
             <h4 class="card-title">Add to Firefox</h4>
             <p class="card-text">Minimum version 55</p>
             <span class="card-bg"></span>
@@ -135,8 +184,8 @@
           </div>
 
           <div class="card">
-            <img src="images/logo-opera.svg.svg" alt="">
-            <h4 class="card-title"> Add to Opera</h4>
+            <img src="images/logo-opera.svg" alt="" />
+            <h4 class="card-title">Add to Opera</h4>
             <p class="card-text">Minimum version 46</p>
             <span class="card-bg"></span>
             <a href="#" class="primary-cta">Add & Install Extension</a>
@@ -144,97 +193,116 @@
         </div>
       </section>
 
-      <section class="questions">
+      <section id="questions">
         <div class="section-header">
-          <h2 class="section-title">  Frequently Asked Questions</h2>
-          <p class="lead-text">Here are some of our FAQs. If you have any other questions you’d like 
-            answered please feel free to email us.</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="lead-text">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
         </div>
 
         <div class="question">
           <div class="question-header">
-            <h5 class="question">What is Bookmark?</h5>
-            <img src="images/icon-arrow.svg" alt="">
+            <h5 class="question-asked">What is Bookmark?</h5>
+            <img src="images/icon-arrow.svg" alt="" />
           </div>
           <div class="answer">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
             </p>
           </div>
         </div>
-        
+
         <div class="question">
           <div class="question-header">
-            <h5 class="question">How can I request a new browser?</h5>
-            <img src="images/icon-arrow.svg" alt="">
+            <h5 class="question-asked">How can I request a new browser?</h5>
+            <img src="images/icon-arrow.svg" alt="" />
           </div>
           <div class="answer">
-            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
           </div>
         </div>
 
         <div class="question">
           <div class="question-header">
-            <h5 class="question">Is there a mobile app?</h5>
-            <img src="images/icon-arrow.svg" alt="">
+            <h5 class="question-asked">Is there a mobile app?</h5>
+            <img src="images/icon-arrow.svg" alt="" />
           </div>
           <div class="answer">
-            <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-              sollicitudin ex et ultricies bibendum.</p>
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
           </div>
         </div>
 
         <div class="question">
           <div class="question-header">
-            <h5 class="question">What about other Chromium browsers?</h5>
-            <img src="images/icon-arrow.svg" alt="">
+            <h5 class="question-asked">What about other Chromium browsers?</h5>
+            <img src="images/icon-arrow.svg" alt="" />
           </div>
           <div class="answer">
-            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
           </div>
-
-          <a href="#" class="primary-cta">  More Info</a>
         </div>
+        <a href="#" class="primary-cta"> More Info</a>
       </section>
 
-      <section class="contact">
+      <section id="contact">
         <div class="section-header">
-          <p class="stats"> 35,000+ already joined</p>
-          <h2 class="section-title">  Stay up-to-date with what we’re doing</h2>
+          <p class="stats">35,000+ already joined</p>
+          <h2 class="section-title">Stay up-to-date with what we’re doing</h2>
         </div>
 
-        <form action="#" class="contact">
-          <input type="email" name="email" id="email">
-          <button type="submit" class="cta-secondary">Contact Us</button>
+        <form action="#" class="contact-form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <button type="submit" class="secondary-cta">Contact Us</button>
         </form>
       </section>
-  </main>
-  
-  <footer>
-    <div class="footer-nav">
-      <div class="footer-logo">
-        <img src="images/logo-bookmark.svg" alt="">
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <div class="footer-logo">
+          <img src="images/logo-bookmark-alt.svg" alt="" />
+        </div>
+        <ul class="footer-nav__items">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="footer-icons">
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+        </div>
       </div>
-          <ul class="footer-nav-items">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="footer-icons">
-            <img src="images/icon-facebook.svg" alt="">
-            <img src="images/icon-twitter.svg.svg" alt="">
-          </div>
-    </div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
 </html>
