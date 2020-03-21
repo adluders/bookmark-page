@@ -148,7 +148,7 @@
 
   /* Contact */
   .contact-form {
-    width: 50%;
+    width: 38%;
     align-items: center;
     flex-direction: row;
     margin: 2rem auto;
@@ -171,7 +171,6 @@
   }
 
   .footer-nav__items {
-    /* flex-direction: row; */
     display: flex;
   }
 
