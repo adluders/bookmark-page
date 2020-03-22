@@ -131,20 +131,16 @@
   .question {
     width: 50%;
     margin: auto;
-  }
-
-  .question-header img {
     cursor: pointer;
   }
 
-  .question-asked {
-    font-weight: 400;
-    cursor: pointer;
-  }
-
-  .question-asked:hover {
+  .question-header:hover {
     color: var(--soft-red);
   }
+
+  /* .question-asked {
+    font-weight: 500;
+  } */
 
   /* Contact */
   .contact-form {

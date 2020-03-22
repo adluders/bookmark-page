@@ -238,8 +238,13 @@ li {
   padding: 0.5rem 0;
 }
 
+.question-header img {
+  display: inline-block;
+  width: 3.5%;
+}
+
 .answer {
-  display: none;
+  text-align: left;
 }
 
 /* Contact */
