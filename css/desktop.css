@@ -155,9 +155,20 @@
     width: 70%;
   }
 
+  .contact-form input + img {
+    top: 40%;
+    left: 63%;
+  }
+
+  .invalid-email {
+    width: 70%;
+    bottom: 10%;
+  }
+
   .contact-form button {
     width: 25%;
     display: inline-block;
+    margin: 0;
   }
 
   /* Footer */

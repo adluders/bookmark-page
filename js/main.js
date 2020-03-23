@@ -3,7 +3,9 @@ const UIElements = {
   titles: ".features-tab__title",
   contents: ".features-tab__content",
   questions: ".question-header",
-  answers: ".answer"
+  answers: ".answer",
+  email: "#email",
+  form: ".contact-form"
 };
 
 const tabs = document.querySelectorAll(UIElements.tabs);
@@ -11,6 +13,10 @@ const titles = document.querySelectorAll(UIElements.titles);
 const contents = document.querySelectorAll(UIElements.contents);
 const questions = document.querySelectorAll(UIElements.questions);
 const answers = document.querySelectorAll(UIElements.answers);
+const email = document.querySelector(UIElements.email);
+const form = document.querySelector(UIElements.form);
+
+console.log(form);
 
 function showContent() {
   removeActive();
@@ -25,14 +31,21 @@ function showContent() {
 }
 
 function displayAnswer() {
-  hideAnswers();
-
   const questionAnswer = document.getElementById(`${this.id}__answer`);
   const arrow = this.childNodes[3];
 
-  questionAnswer.style.display = "block";
+  questionAnswer.classList.toggle("show");
 
-  arrow.setAttribute("src", "images/icon-arrow-close.svg");
+  if (questionAnswer.classList.contains("show")) {
+    arrow.setAttribute("src", "images/icon-arrow.svg");
+  } else {
+    arrow.setAttribute("src", "images/icon-arrow-close.svg");
+  }
+}
+
+function validateEmail(e) {
+  e.preventDefault();
+  console.log(e);
 }
 
 function hideContents() {
@@ -43,10 +56,6 @@ function removeActive() {
   titles.forEach(title => title.classList.remove("active-tab"));
 }
 
-function hideAnswers() {
-  answers.forEach(answer => (answer.style.display = "none"));
-}
-
 // Event Listeners
 tabs.forEach(tab => tab.addEventListener("click", showContent));
 
@@ -54,4 +63,4 @@ questions.forEach(question =>
   question.addEventListener("click", displayAnswer)
 );
 
-window.addEventListener("load", hideAnswers);
+form.addEventListener("submit", validateEmail);

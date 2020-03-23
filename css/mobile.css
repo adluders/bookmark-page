@@ -41,6 +41,10 @@ li {
   border-bottom: solid var(--soft-red);
 }
 
+.show {
+  display: none;
+}
+
 .light-cta,
 .primary-cta,
 .secondary-cta {
@@ -260,6 +264,8 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  padding: 1rem 0;
 }
 
 .contact-form input {
@@ -267,6 +273,33 @@ li {
   margin: 1rem 0;
   border-radius: 0.5rem;
   border: none;
+  z-index: 2;
+}
+
+.contact-form input + img {
+  position: absolute;
+  top: 23%;
+  z-index: 2;
+  right: 2%;
+}
+
+.invalid-email {
+  border: none;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  height: 35%;
+  width: 100%;
+  bottom: 45%;
+  position: absolute;
+  background-color: var(--soft-red);
+  color: #fff;
+  font-style: italic;
+}
+
+.contact-form button {
+  margin-top: 2rem;
 }
 
 /* Footer */
